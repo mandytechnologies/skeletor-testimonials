@@ -1,0 +1,26 @@
+{
+    "name": "skeletor-testimonials",
+    "version": "0.1.2",
+    "description": "Logic for adding the \"Testimonials\" posttype to be used in conjunction with the Skeletor theme.",
+    "main": "skeletor-testimonials.js",
+    "author": "Mandy Design",
+    "scripts": {
+        "build": "wp-scripts build src/skeletor-testimonials.js",
+        "start": "wp-scripts start src/skeletor-testimonials.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "@wordpress/scripts": "^26.4.0"
+    },
+    "plugin_data": {
+        "title": "Skeletor Testimonials",
+        "author": "Mandy",
+        "author_profile": "https://mandytechnologies.com",
+        "download_url": "https://bitbucket.org/madebymandy/skeletor-testimonials/get/master.zip",
+        "tested": "6.4.2",
+        "requires": "6.1.0",
+        "requires_php": "8.0",
+        "last_updated": "2024-01-15 11:52:00"
+    }
+}

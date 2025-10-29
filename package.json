@@ -1,9 +1,9 @@
 {
-    "name": "skeletor-testimonials",
-    "version": "0.1.2",
+    "name": "qb-testimonials",
+    "version": "1.0.0",
     "description": "Logic for adding the \"Testimonials\" posttype to be used in conjunction with the Skeletor theme.",
     "main": "skeletor-testimonials.js",
-    "author": "Mandy Design",
+    "author": "Quick Build",
     "scripts": {
         "build": "wp-scripts build src/skeletor-testimonials.js",
         "start": "wp-scripts start src/skeletor-testimonials.js",
@@ -14,10 +14,10 @@
         "@wordpress/scripts": "^26.4.0"
     },
     "plugin_data": {
-        "title": "Skeletor Testimonials",
-        "author": "Mandy",
-        "author_profile": "https://mandytechnologies.com",
-        "download_url": "https://bitbucket.org/madebymandy/skeletor-testimonials/get/master.zip",
+        "title": "QB Testimonials",
+        "author": "Quick Build",
+        "author_profile": "https://www.quickbuildwebsite.com/",
+        "download_url": "https://github.com/mandytechnologies/skeletor-testimonials/archive/refs/heads/main.zip",
         "tested": "6.4.2",
         "requires": "6.1.0",
         "requires_php": "8.0",

@@ -3,16 +3,19 @@
 namespace Mandy;
 
 /**
- * Plugin Name:       Quick Build Testimonials
- * Plugin URI:        https://quickbuildwebsite.com
- * Description:       Adds testimonials posttype and block to be used in conjunction with the Skeletor theme
- * Author:            Quick Build
- * Author URI:        https://quickbuildwebsite.com
- * Text Domain:       quickbuild
- * Requires at least: 6.1
- * Requires PHP:      7.0
- * Version:           0.1.2
- *
+ * Plugin Name:           QB - Testimonials
+ * Plugin URI:            https://github.com/mandytechnologies/skeletor-testimonials
+ * Description:           Adds testimonials posttype and block to be used in conjunction with the Skeletor theme
+ * Version:               1.0.0
+ * Requires PHP:          7.0
+ * Requires at least:     6.1.0
+ * Tested up to:          6.8.2
+ * Author:                Quick Build
+ * Author URI:            https://www.quickbuildwebsite.com/
+ * License:               GPLv2 or later
+ * License URI:           https://www.gnu.org/licenses/
+ * Text Domain:           qb-testimonials
+ * 
  * @package           Skeletor_Testimonials
  */
 
@@ -244,12 +247,14 @@ if (!class_exists('\Mandy\Skeletor_Testimonials')) {
     Skeletor_Testimonials::instance();
 }
 
-define('SKELETOR_TESTIMONIALS_VERSION', '0.1.2');
-if (!class_exists('Skeletor\Plugin_Updater')) {
-    require_once(__DIR__ . '/class--plugin-updater.php');
-}
-$updater = new \Skeletor\Plugin_Updater(
-    plugin_basename(__FILE__),
-    SKELETOR_TESTIMONIALS_VERSION,
-    'https://bitbucket.org/madebymandy/skeletor-testimonials/raw/HEAD/package.json'
+define('MANDY_TESTIMONIALS_VERSION', '1.0.0');
+
+require 'plugin-update-checker/plugin-update-checker.php';
+
+$update_checker = \Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/mandytechnologies/skeletor-testimonials',
+	__FILE__,
+	'skeletor-testimonials'
 );
+
+require_once( 'includes/class-plugin.php' );
